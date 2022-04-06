@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     public float movSpeed;
     public float howClose;
 
+    public bool isAlive=true;
+
     
     void Start()
     {
@@ -18,12 +20,17 @@ public class Enemy : MonoBehaviour
     
     void Update()
     {
-        distance = Vector3.Distance(player.position, transform.position);
+
+        if(isAlive)
+        {
+            distance = Vector3.Distance(player.position, transform.position);
+        }
+        
 
         if(distance<=howClose)
         {
             transform.LookAt(player);
-            GetComponent<Rigidbody>().AddForce(transform.forward * movSpeed);
+            GetComponent<Rigidbody>().velocity = transform.forward * movSpeed;
             
         }
 
@@ -39,7 +46,9 @@ public class Enemy : MonoBehaviour
     void OnCollisionEnter(Collision col) {
             if(col.gameObject.CompareTag("Player"))
             {
+                
                 Destroy(gameObject);
+                isAlive = false;
             }
         }
 
