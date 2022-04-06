@@ -11,6 +11,15 @@ public class SceneMagn : MonoBehaviour
         Time.timeScale=0.0f;
     }
 
+    public void PlayAgainB(){
+
+        SceneManager.LoadScene("GamePlay1");
+        Time.timeScale = 1.0f;
+
+    }
+
+    
+
     public void StartGame()
     {
         Time.timeScale=1.0f;

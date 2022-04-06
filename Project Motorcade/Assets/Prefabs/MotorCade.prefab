@@ -185,6 +185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 410d6e95206954f4baa33d186efcbe69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winPanel: {fileID: 0}
+  loosePanel: {fileID: 0}
 --- !u!1001 &368250965771928600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -297,6 +299,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 410d6e95206954f4baa33d186efcbe69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winPanel: {fileID: 0}
+  loosePanel: {fileID: 0}
 --- !u!1001 &368250965782668651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -409,6 +413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 410d6e95206954f4baa33d186efcbe69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winPanel: {fileID: 0}
+  loosePanel: {fileID: 0}
 --- !u!1001 &368250965813195117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -521,6 +527,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 410d6e95206954f4baa33d186efcbe69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winPanel: {fileID: 0}
+  loosePanel: {fileID: 0}
 --- !u!1001 &368250966011483641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -642,6 +650,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  winPanel: {fileID: 0}
+  loosePanel: {fileID: 0}
 --- !u!1001 &368250966102238160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -754,6 +764,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 410d6e95206954f4baa33d186efcbe69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winPanel: {fileID: 0}
+  loosePanel: {fileID: 0}
 --- !u!1001 &368250966126250557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -866,3 +878,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 410d6e95206954f4baa33d186efcbe69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winPanel: {fileID: 0}
+  loosePanel: {fileID: 0}
