@@ -1,0 +1,47 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Enemy : MonoBehaviour
+{
+    private Transform player;
+    private float distance;
+    public float movSpeed;
+    public float howClose;
+
+    
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
+    
+    void Update()
+    {
+        distance = Vector3.Distance(player.position, transform.position);
+
+        if(distance<=howClose)
+        {
+            transform.LookAt(player);
+            GetComponent<Rigidbody>().AddForce(transform.forward * movSpeed);
+            
+        }
+
+        
+
+        //for attack
+        if(distance <= 1.5f)
+        {
+            //do attack
+        }
+    }
+
+    void OnCollisionEnter(Collision col) {
+            if(col.gameObject.CompareTag("Player"))
+            {
+                Destroy(gameObject);
+            }
+        }
+
+    
+}
