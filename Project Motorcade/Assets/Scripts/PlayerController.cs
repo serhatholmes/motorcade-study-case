@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y *transform.up;
+        Vector3 targetPosition = new Vector3(0, transform.position.y, transform.position.z);
     
         if(desiredLane == 0)
         {
@@ -53,13 +53,17 @@ public class PlayerController : MonoBehaviour
             targetPosition += Vector3.right * laneDistance;
         }
 
-        transform.position = Vector3.Lerp(transform.position, targetPosition, Time.fixedDeltaTime*90);
+        targetPosition += Vector3.forward * forwardSpeed * Time.deltaTime;
+
+        Debug.Log("Pos:"+ transform.position+ " - Target Pos: "+ targetPosition);
+        transform.position = Vector3.Lerp(transform.position, targetPosition, 0.05f);
+        //rb.velocity = Vector3.forward * forwardSpeed;
         
     }
 
 
     private void FixedUpdate() 
     {
-        controller.Move(direction*Time.fixedDeltaTime);
+        //controller.Move(direction*Time.fixedDeltaTime);
     }
 }

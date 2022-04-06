@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 368250965060688812}
   - component: {fileID: 1263795308}
   - component: {fileID: 7427892562545135434}
+  - component: {fileID: 108413386}
   m_Layer: 0
   m_Name: MotorCade
   m_TagString: Player
@@ -51,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc34a24231dd5fc40a038a60ce409c1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 20
+  forwardSpeed: 50
   desiredLane: 1
   laneDistance: 6
   rb: {fileID: 0}
@@ -73,6 +74,22 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1.5, z: 0}
+--- !u!54 &108413386
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368250965060688811}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &368250964588214669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -158,7 +175,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 1
 --- !u!65 &581591214
 BoxCollider:
@@ -248,14 +265,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b13a0cd3596fd424d93ba41e29819447, type: 3}
---- !u!1 &8464850688744457040 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8099014294530836296, guid: b13a0cd3596fd424d93ba41e29819447, type: 3}
-  m_PrefabInstance: {fileID: 368250965771928600}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8464850688744457042 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8099014294530836298, guid: b13a0cd3596fd424d93ba41e29819447, type: 3}
+  m_PrefabInstance: {fileID: 368250965771928600}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8464850688744457040 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8099014294530836296, guid: b13a0cd3596fd424d93ba41e29819447, type: 3}
   m_PrefabInstance: {fileID: 368250965771928600}
   m_PrefabAsset: {fileID: 0}
 --- !u!54 &1024983567018584255
@@ -272,7 +289,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 1
 --- !u!65 &525999335
 BoxCollider:
@@ -362,14 +379,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b13a0cd3596fd424d93ba41e29819447, type: 3}
---- !u!1 &8464850688755229219 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8099014294530836296, guid: b13a0cd3596fd424d93ba41e29819447, type: 3}
-  m_PrefabInstance: {fileID: 368250965782668651}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8464850688755229217 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8099014294530836298, guid: b13a0cd3596fd424d93ba41e29819447, type: 3}
+  m_PrefabInstance: {fileID: 368250965782668651}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8464850688755229219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8099014294530836296, guid: b13a0cd3596fd424d93ba41e29819447, type: 3}
   m_PrefabInstance: {fileID: 368250965782668651}
   m_PrefabAsset: {fileID: 0}
 --- !u!54 &368250966055643085
@@ -386,7 +403,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 1
 --- !u!65 &81476522
 BoxCollider:
@@ -500,7 +517,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 1
 --- !u!65 &109898972
 BoxCollider:
@@ -598,14 +615,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da6f11236900ad849bdc86390abf6684, type: 3}
---- !u!1 &2420426824889685799 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2633302942323524318, guid: da6f11236900ad849bdc86390abf6684, type: 3}
-  m_PrefabInstance: {fileID: 368250966011483641}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2420426824889685797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2633302942323524316, guid: da6f11236900ad849bdc86390abf6684, type: 3}
+  m_PrefabInstance: {fileID: 368250966011483641}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2420426824889685799 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2633302942323524318, guid: da6f11236900ad849bdc86390abf6684, type: 3}
   m_PrefabInstance: {fileID: 368250966011483641}
   m_PrefabAsset: {fileID: 0}
 --- !u!54 &368250966055643086
@@ -617,12 +634,12 @@ Rigidbody:
   m_GameObject: {fileID: 2420426824889685799}
   serializedVersion: 2
   m_Mass: 100
-  m_Drag: 10
+  m_Drag: 1
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 1
 --- !u!65 &1783610127
 BoxCollider:
@@ -737,7 +754,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 1
 --- !u!65 &1557688066
 BoxCollider:
@@ -851,7 +868,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 1
 --- !u!65 &1464111041
 BoxCollider:
