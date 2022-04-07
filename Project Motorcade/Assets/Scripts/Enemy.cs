@@ -31,6 +31,8 @@ public class Enemy : MonoBehaviour
         {
             transform.LookAt(player);
             GetComponent<Rigidbody>().velocity = transform.forward * movSpeed;
+
+            // can be destroyed after a while
             
         }
 
