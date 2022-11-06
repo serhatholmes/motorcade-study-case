@@ -10,11 +10,14 @@ public class Enemy : MonoBehaviour
     public float howClose;
 
     public bool isAlive=true;
-
+    Animator anim;
     
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+
+         anim = this.gameObject.GetComponent<Animator>();
+         
     }
 
     
@@ -29,7 +32,9 @@ public class Enemy : MonoBehaviour
 
         if(distance<=howClose)
         {
+            anim.SetBool("Running",true);
             transform.LookAt(player);
+            
             GetComponent<Rigidbody>().velocity = transform.forward * movSpeed;
 
             // can be destroyed after a while
@@ -42,6 +47,7 @@ public class Enemy : MonoBehaviour
         if(distance <= 1.5f)
         {
             //do attack
+            anim.SetBool("Attacking",true);
         }
     }
 
